@@ -1,11 +1,11 @@
 # Estrutura de dados
 
-Neste repositório deixarei algumas explicações do lado téorico da disciplina estrutura de dados I
+Neste repositório deixarei algumas explicações sobre estrutura de dados I
 <br><br>
 
 <h2>Vetores e Matrizes</h2>
 
-Vetor -> Coleção dee variáveis do mesmo tipo, acessíveis com um único nome e armazenado no instante na memória. A individualização de cada elemento do vetor é feita através dos índices.
+Vetor -> Coleção de variáveis do mesmo tipo, acessíveis com um único nome e armazenado no instante na memória. A individualização de cada elemento do vetor é feita através dos índices.
 Exemplo:
 
 ```c
@@ -192,7 +192,7 @@ int main(void) {
 
 <h2>Listas</h2>
 
-São estruturas que permitem as operações de inserção remoção e recuperação de itens, sendo que as posições para as listas não importam ou signifiado para os dados. Nela importa se o dado etá ou não na lista.
+São estruturas que permitem as operações de inserção, remoção e recuperação de itens, sendo que as posições para as listas ou o signifiado da posição para os dados não importam. Nela importa se o dado etá ou não na lista.
  - No caso dela, os dados são adicionados verificando se tem espaço ou não, caso tenha ele insere na lista.
  - Já no processo de remoção, você pode apagar todos elementos ou somente um passando a chave dele e aquele espaço ficara NULL.
 
@@ -200,13 +200,13 @@ Temos alguns tipos de listas
 - Listas estásticas: Possuem determinada quantidade de itens.
 - Listas dinâmicas: São alocadas na memória e dependem só da memória total disponível.
 - Listas ordenadas: Lista em ordem crescente ou descrescente.
-- Buscas em listas: podemos usar conforme nosso aprendizado a busca sequêncial (Linear) ou se tiver ordenada a bionária.
+- Buscas em listas: podemos usar conforme nosso aprendizado a busca sequêncial (Linear) ou se tiver ordenada pode se usar a busca binária.
 
 <br>
 
 <h2>Pilhas - Stack</h2>
 
-Semelhante a uma pilha de pratos sujos, usa o tipo LIFO (LAST-IN FIRST-OUT), ou seja último a ser inserido é o primeiro a ser retirado. Exemplos de pilhas: Recursividadem, mecanismo de desfazer/refazer os editores de texto, navegações de página Web, entre outros. Pode ser realizadoem um vetor.
+Semelhante a uma pilha de pratos sujos, usa o tipo LIFO (LAST-IN FIRST-OUT), ou seja último a ser inserido é o primeiro a ser retirado. Exemplos de pilhas: Recursividade, mecanismo de desfazer/refazer os editores de texto, navegações de página Web, entre outros. Pode ser realizado em um vetor.
 
 Na pilha, a manipulação dos elementos é realizada em apenas uma das extremidades, chamada de ```TOPO```, pois ele só trabalha com o Topo a pilha e não a Base.
 
@@ -217,17 +217,17 @@ Lembre-se da pilha como empilhar e desempilhar....
 
 Estruturas do tipo FIFO (first-in first-out), primeiro elemento a ser inserido é o primeiro a ser retirado, pense numa fila de banco, o primeiro a chegar é o primeiro a ser atendido e retirado da fila. O que se faz na realidade é indicar quem é o primeiro elemento.
 
-Na realidade a remoção de elemento da fila é realizada em apenas alterando a informação da posição do ultimo elemento, resultando numa fila circular.
+Na verdade a remoção do elemento da fila é apenas alterando a informação da posição do último elemento, resultando numa fila circular.
 
 <h2>Principal diferença entre as 3 (Listas, pilhas e filas)</h2>
 
-Primeiramente, vamos exemplificar ainda mais as três estururas em exemplos comuns no nosso dia a dia. 
+Primeiramente, vamos exemplificar ainda mais as três estururas em exemplos comuns do nosso dia a dia. 
 - Lista -> Lista de compras (não importa a posição e sim se os elementos estão ali na lista).
 - Pilha -> Pilha de roupas.
 - Fila -> Fila de lotérica ou no caixa do Supermercado.
 
-Ou seja, a lista não ele é a menos restrita possível, podemos trabalhar com ela em qualquer posição, pois não importa e sim o que contém nela.
+Ou seja, a lista tem a menor restrição possível, podemos trabalhar com ela em qualquer posição, pois não importa como estão os itens e sim o que contém nela.
 
-Já na pilha trabalhamos sempre com o Topo, adicionamos elementos ao topo e removemos o ultimo elemento adicionado no topo.
+Já na pilha trabalhamos sempre com o Topo, adicionamos elementos ao topo e removemos o último elemento adicionado no topo.
 
-Agora na fila é mais restrita possível, pois podemos adicionar elemento mas na remoção só indicaremos quem é o primeiro e o último elemnto e não tiraremos da memória completamente pois é estática esse tipo de listagem e restrita conforme comentado. 
+Agora na fila, tem a maior restrição possível, pois podemos adicionar elementos normalmente, mas na remoção só indicaremos quem é o primeiro e o último elemento e não tiraremos da memória completamente, pois é estática esse tipo de listagem e há uma restrição mais rigorosa conforme comentado. 
